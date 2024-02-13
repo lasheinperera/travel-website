@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>header</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="validation.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="package.html">Tour Packages</a></li>
+				<li><a href="WebTravel.html">Booking</a></li>
+				<li><a href="gallery.html">Galleria</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="login.html">Agent Log in</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	
+	<div class="image1">
+            
+    </div>
+    <div>           
+    	<h1 class="heading1">Book Your Tour Now</h1>
+    </div>  
+	
+    <div class="bookingform">
+		<form method="POST" action="insert.php" onsubmit="sendEmail(); reset(); return false;">
+        	<br>
+            <br>
+            <br>
+                <input type="text" name="first_name"  placeholder="First Name" class ="firstName" required />
+                <input type="text" name="last_name" placeholder="Last Name" class="lastName" required />
+                <br>
+                <br>
+                <br> 
+                <select class="noOfPax" name="no_of_pax" required >
+                    <option disabled selected value="" class="disabled_noOfPax">No. of Pax.</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+				  <select class="package" name="package" required >
+                    <option disabled selected value=""  class="disabled_package">Package Type</option>
+                    <option value="1. Beaches and Sunsets">1. Beaches and Sunsets</option>
+                    <option value="2. Cultural Heritage">2. Cultural Heritage</option>
+                    <option value="3. Adventure and Wildlife">3. Adventure and Wildlife</option>
+                    <option value="4. Tea Plantations and Scenery">4. Tea Plantations and Scenery</option>
+                    <option value="5. Relaxation and Wellness">5. Relaxation and Wellness</option>
+                    <option value="6. Family Tour">6. Family Tour</option>
+                    <option value="7. An Unforgettable Honeymoon">7. An Unforgettable Honeymoon</option>
+                    <option value="8. Thrilling Sri Lanka">8. Thrilling Sri Lanka</option>
+                    <option value="9. Mesmarizing Sri Lanka">9. Mesmarizing Sri Lanka</option>
+                  </select>
+                <br>
+                <br>
+                <label for="myDateInput1" class="lbl_dateFrom">Date From</label>
+                <label for="myDateInput2" class="lbl_dateTo">Date To</label>
+                <br>
+                <input type="date" id="date_from" name="date_from"  placeholder="Choose a date" class="dateFrom" required >
+                <input type="date" id="date_to" name="date_to" placeholder="Choose a date" class="dateTo" required >
+                <br>
+                <br>
+                <br>
+                <input type="text" name="country" placeholder="Country" class="country" required />
+                <input type="text" name="tp" placeholder="Contact Number" class="contactNo" required />
+                <br>
+                <br>
+                <br>
+                <input type="email" name="email" placeholder="Email" class="email" required />
+                <br>
+                <input type="submit" onclick="return validateForm()" class="submit" value="SUBMIT"/>
+                <br>
+                <textarea class="message" name="message" placeholder="Message" rows="4" cols="50"></textarea>
+                <br>
+				</form>
+                
+            </div>
+		
+	
+	<footer class="footer">
+  	 <div class="footer-container">
+  	 	<div class="footer-row">
+  	 		<div class="footer-col">
+  	 			<h4>content</h4>
+  	 			<ul>
+            <li><a href="home.html">home</a></li>
+                      <li><a href="aboutus.html">about us</a></li>
+                      <li><a href="package.html">tour packages</a></li>
+                      <li><a href="WebTravel.html">booking</a></li>
+                      <li><a href="gallery.html">galleria</a></li>
+                      <li><a href="review.html">reviews</a></li>
+                      <li><a href="login.html">Agent Log in</a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Contact us</h4>
+  	 			<ul>
+  	 				<li><a href="#">call us: +94 112 485 5534</a></li>
+  	 				<li><a href="#">email: pearlasia@gmail.com</a></li>
+  	 				<li><a href="#">address: N0.822 Temple Road, Katunayake,Sri Lanka</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+  <script>
+    function sendEmail(){
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "lasheinperera@gmail.com",
+    Password : "9B4B496F2707A6760D46729278274CB34F672F4B8572053E88B04DEE6A214986082DF8A2AB0F53AD3F3F6367F455992E",
+    To : document.getElementById("email").value,
+    From : "lasheinperera@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+  </script>
+</body>
+</html>

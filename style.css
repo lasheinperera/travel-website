@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+}
+
+.bookingform
+{
+	background-color: #000000;
+	margin: 40px;
+	background-image:url("images\\daniele-franchi-nhzzN8HIT0s-unsplash.jpg");
+	
+	height: 600px;
+	width: auto;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 100%;
+	
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F0F0F0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3C486B;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F45050;
+}
+
+header .logo img{
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.primary-btn{
+    padding: 15px 40px;
+    background: #a7c06c
+    ;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+
+.primary-btn:hover{
+    transform: scale(1.057);
+}
+
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+footer ul{
+	list-style: none;
+}
+.footer{
+	background-color: #3C486B;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+   margin-left: 10vh;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	
+	bottom: -10px;
+	background-color: #F45050;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.image1{
+  background-image: url("images\\formbackground.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading1 {
+    color:#3C486B;
+    margin-top: 40px;
+	
+	margin-left: 50px;
+}
+
+.image1class{
+    height: 400;
+    background-color: #00000083;
+}
+
+.firstName{
+    width: 25%;
+  padding: 7px 20px;
+  margin-left: 200px;
+  box-sizing: border-box;
+}
+
+.lastName{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.noOfPax{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.disabled_noOfPax{
+    color:#908585;
+    font-size: small;
+}
+
+.package{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.disabled_package{
+    color:#908585;
+    font-size: small;
+}
+
+.dateFrom{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.dateTo{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.email{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+.country{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.contactNo{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+
+.message{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lbl_dateFrom{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lbl_dateTo{
+    width: 25%;
+    padding: 7px 20px;
+    margin-left: 403px;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit{
+    width: 15%;
+    margin-left: 720px;
+    margin-top: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 40px;
+    background: #3C486B;
+    font-weight: bold;
+    color: white;
+    border: #ffffff;
+    transition: transform.2s;
+
+    opacity: 100%;
+}
+
+.submit:hover{
+    transform: scale(1.057)
+}
